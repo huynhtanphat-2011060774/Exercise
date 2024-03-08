@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User-Defined Variable</title>
+  <script>
+    function createVariable() {
+      const variableName = prompt("Enter a variable name:");
+      const variableValue = prompt(`Enter the value for ${variableName}:`);
+
+      // Create an object and use the user-defined name as a property
+      const dynamicVariables = {};
+      dynamicVariables[variableName] = variableValue;
+
+      // Access the variable using the user-defined name
+      console.log(`Value of ${variableName}: ${dynamicVariables[variableName]}`);
+    }
+  </script>
+</head>
+<body>
+
+  <h1>User-Defined Variable</h1>
+  <p>Click the button to create a variable with a user-defined name.</p>
+  <button onclick="createVariable()">Create Variable</button>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <script>
+    function guessTheNumber() {
+      const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+      const userGuess = parseInt(prompt("Guess the number between 1 and 10"));
+
+      
+      if (userGuess === randomNumber) {
+        document.getElementById('result').innerHTML = "Good Work! Your guess is correct.";
+      } else {
+        document.getElementById('result').innerHTML = `Not matched. The correct number was ${randomNumber}.`;
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Guess the Number Game</h1>
+  <p>Click the button to play the game!</p>
+  <button onclick="guessTheNumber()">Play Game</button>
+  <p id="result"></p>
+
+</body>
+</html>
