@@ -1,13 +1,8 @@
-function checkCharacterPosition(inputString, specifiedCharacter) {
-    if (inputString.length >= 4 && inputString.charAt(1) === specifiedCharacter) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  
-  const testString = "Hello";
-  const specifiedChar = "e";
-  
-  console.log(`Result: ${checkCharacterPosition(testString, specifiedChar)}`);
+
+const testString = "Hello";
+const specifiedChar = "e";
+
+const result = testString.length >= 4 && testString.charAt(1) === specifiedChar;
+console.log(`Result: ${result}`);
+
   
