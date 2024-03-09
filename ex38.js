@@ -10,6 +10,6 @@ function evaluateGrade(totalMarks, isFinalExam) {
   const result1 = evaluateGrade(studentTotalMarks1, isFinalExam1);
   const result2 = evaluateGrade(studentTotalMarks2, isFinalExam2);
   
-  console.log(`Result 1: ${result1}`); // Should return true
-  console.log(`Result 2: ${result2}`); // Should return false
+  console.log(`Result 1: ${result1}`); 
+  console.log(`Result 2: ${result2}`); 
   

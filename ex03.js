@@ -16,6 +16,5 @@ function getCurrentDate() {
     console.log(`dd/mm/yyyy: ${formatDate4}`);
   }
   
-  // Call the function to get and display the current date
   getCurrentDate();
   
