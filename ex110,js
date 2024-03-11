@@ -1,0 +1,18 @@
+const sequence = [2, 4, 6, 8, 3, 7, 10];
+const givenNumber = 3;
+
+let evenCount = 0;
+let found = false;
+
+for (let i = 0; i < sequence.length; i++) {
+    if (sequence[i] === givenNumber) {
+        found = true;
+        break;
+    }
+
+    if (sequence[i] % 2 === 0) {
+        evenCount++;
+    }
+}
+
+console.log(`Number of even values before the first occurrence of ${givenNumber}: ${evenCount}`);
